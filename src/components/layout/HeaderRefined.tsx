@@ -138,7 +138,7 @@ export default function HeaderRefined() {
             <div className="px-6 py-8 flex flex-col gap-6">
               {navItems.map((item) => (
                 <div key={item.name} className="flex flex-col gap-4">
-                  <div className="text-[10px] font-black uppercase tracking-[0.4em] text-lime-primary/60 border-b border-white/5 pb-2">
+                  <div className="text-[12px] font-black uppercase tracking-[0.4em] text-lime-primary border-b border-white/10 pb-2">
                     {item.name}
                   </div>
                   {item.dropdown ? (
@@ -148,7 +148,7 @@ export default function HeaderRefined() {
                           key={sub.slug}
                           to={item.name === "Services" ? `/services/${sub.slug}` : `/locations/${sub.slug}`}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-white"
+                          className="text-[14px] font-bold uppercase tracking-widest text-white/60 hover:text-white"
                         >
                           {sub.name}
                         </Link>
@@ -158,7 +158,7 @@ export default function HeaderRefined() {
                     <a
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-white pl-4"
+                      className="text-[14px] font-bold uppercase tracking-widest text-white/60 hover:text-white pl-4"
                     >
                       View Page
                     </a>
@@ -167,7 +167,7 @@ export default function HeaderRefined() {
               ))}
               <a
                 href="tel:+16364977314"
-                className="flex items-center gap-3 text-[11px] font-black uppercase tracking-widest text-white/70 pt-4 border-t border-white/5"
+                className="flex items-center gap-3 text-[14px] font-black uppercase tracking-widest text-white/80 pt-4 border-t border-white/10"
               >
                 <Phone className="w-4 h-4 text-lime-primary" />
                 (636) 497 7314
